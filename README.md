@@ -1,5 +1,5 @@
 # Linear Regression(선형 회귀)
-Linear regression은 $(x, y)$라는 데이터들이 $y \approx w_1x + w_0 $의 선형 관계를 갖는다고 가정하여 최적의 $(w^\*_0, w^\*_1)$ 을 찾는 것이다.
+Linear regression은 $(x, y)$라는 데이터들이 $y \approx w_1x + w_0 $의 선형 관계를 갖는다고 가정하여 최적의 $(w^\*_0, w^\*_1)$ 을 찾는 것이다. (일변수 함수를 예시로 들었다.)
 
 ## MSE Loss(Mean Squared Estimation Loss)
 MSE Loss는 예측값과 실제값의 차이를 제곱하여 더하고 평균을 낸 것이다.

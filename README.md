@@ -10,6 +10,10 @@ $$L = \frac{1}{N}\sum^{N}_{i=1}(\mathbf{w}^T\mathbf{x}^{(i)} - y^{(i)})^2$$
 
 $$\nabla_w L = \frac{2}{N}\sum^{N}_{i=1} (w^Tx^{(i)} - y^{(i)})x^{(i)}$$
 
+실제로 코드에서는 위에서 쓴 식에서 행렬을 이용해 더 단순화 시켰다.
+
+왜냐하면 gpu로 행렬계산을 하는 것이 for문 보다 더 효율적이고 빠르기 때문이다.
+
 ## Gradient Descent(경사 하강법)
 MSE Loss를 그래디언트 한 것($\nabla_wL$)을 이용해 Loss를 최소화 시키는 방향으로 $w$를 업데이트 하는 것이다.
 
